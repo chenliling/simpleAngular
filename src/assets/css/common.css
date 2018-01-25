@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei",'微软雅黑','思源黑体',SYHT,"WenQuanYi Micro Hei",sans-serif;
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+.hide {
+    display: none;
+}
+
+pre {
+    margin: 0 !important;
+    display: inline-block;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+    background: none;
+}
+
+input, button {
+    height: 35px;
+    margin: 0;
+    padding: 6px 12px;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+}
+
+input[disabled], button[disabled] {
+    background-color: #eee;
+}
+
+input, select {
+    border: 1px solid #CCC;
+}
+
+::-webkit-input-placeholder {
+    color: #BBB;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #BBB;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #BBB;
+}
+
+button {
+    color: #FFF;
+    background-color: #428BCA;
+    border: 1px solid #357EBD;
+}
+/**
+*自定义样式
+ */
+a{color: #000000; text-decoration: none;}
+input:focus, textarea:focus, select:focus,a:focus,button:focus {
+    outline-offset: 0;
+    outline: none;
+}
+ul, menu, dir {
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    list-style: none;
+}
+p {
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    box-sizing: border-box;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+i,em{font-style: normal;}
+dd {
+    display: block;
+    -webkit-margin-start: 0;
+}
+button {  padding: 0; border:0;  }
+dl {
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+a{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.goods{ width: 100%;color: #333; height: .44rem;background: #fff; border-bottom: 1px solid #eeeeee; display: flex; justify-content: space-between; padding-left: .15rem;  padding-right: .15rem;align-items: center; font-size: .2rem;}
+.goods a, .goods i{display: inline-block; width: .13rem; height: .16rem;}
+.goods a{background: url(../img/back.png) no-repeat center; background-size: contain;}
+.goods .packpage-fun{font-size: .16rem; color: #999;}
+/*弹窗*/
+.foo-top span:first-child a{display: inline-block}
+.pop-all{ width: 100%; background: rgba(0,0,0,.6); position: fixed; top:0; left: 0; z-index:1050;display: none;}
+.pop{width: 100%; background: transparent; position: fixed; top:0; right: -100%; z-index: 1100; display: flex}
+.pop-left{width: 15%; height: 100%;}
+.pop-container{width: 85%; background: rgba(241,241,241,.95); height: 100%; display: flex; flex-direction: column; align-items: flex-end; }
+.pop-search{width: 90%; height: .6rem; display: flex;}
+.pop-search p{width: 90%; height: 100%; display: flex; align-items: flex-start; overflow: hidden; border-bottom: 1px solid #000000;}
+.pop-search p input{width: 100%; height: 100%; border:none;  background: transparent;  padding-left: .1rem; margin-bottom: .01rem; font-size: .16rem}
+.pop-search button{ display: inline-block;  width: 10%; background: url(../img/search.png) left bottom no-repeat; background-size: 80%;height: 100%;}
+.pop-content{width: 90%; height: 90%; box-sizing: border-box; overflow-y: scroll; }
+.pop-content::-webkit-scrollbar {  width: 5px; background: transparent; }
+.pop-content::-webkit-scrollbar-thumb {  width: 5px;  border-radius: 10px; border: none; background-color: #c4c1c1; }
+.list-select{width: 100%; height: auto;}
+.list-select ul{width: 100%; height: auto}
+.list-select ul li .top{width: 100%; height: .6rem; border-bottom:1px solid #333333; position: relative; display: flex; align-items: flex-end;}
+.list-select ul li .top p{margin-bottom: .03rem;}
+.list-select ul li a{font-size: .14rem;}
+.list-select ul li a p{letter-spacing: .06rem;}
+.list-select ul li i{display: inline-block; width: .07rem; height: .1rem; margin-left: .05rem; transform: rotate(0deg); transition: all .5s linear; background: url(../img/pop-dropdown.png) center no-repeat; background-size: contain; vertical-align: middle;}
+.list-select ul li i.active{transform: rotate(180deg);}
+.list-select ul li span.title-english{display: inline-block; width: 70%;  transform: scale(.8); text-align: right; height: .2rem; font-size: .12rem;  position: absolute; bottom: -.2rem; right: 0; }
+.pop-bottom{ width: 100%; height: auto; box-sizing: border-box;}
+.pop-bottom ul{width: 100%; height: 100%;}
+.pop-bottom ul li{ height: .3rem; text-align: right; box-sizing: border-box; padding-right: .1rem;}
+.pop-bottom ul li a{color: #93732b; font-size: .14rem}
+.pop-sub{width: 100%;}
+.list-select .pop-sub{ width: 80%; margin-left: .15rem; display: none}
+.list-select .pop-sub li{margin-top: .3rem;}
+.list-select .pop-sub li a{font-size: .14rem; letter-spacing: .03rem;}
+
+
+/*商标*/
+.st-footer{width: 100%; height: 2.6rem;  font-size: .14rem; background-color: #ffffff;margin-top: .1rem}
+.st-footer .foo-top{width: 90%; height: 15%; display: flex; justify-content: space-between; align-items: center; margin: 0 auto;}
+.st-footer .foo-center{ position:relative;width: 100%; height: 85%; text-align: center; margin: 0 auto; border-top: 1px solid #cccccc; padding-top: .1rem;}
+.st-footer .foo-center img{width: 15%; height: auto;}
+.st-footer .foo-center p{ width: 65%; margin: 0 auto; margin-top: .05rem; font-size: .12rem; color: #666666;}
+.st-footer .foo-center p span{display: block; margin-top: .05rem;}
+.foo-top span:first-child a:first-child{vertical-align: middle;width: .6rem;display: inline-block;border-right: 1px solid #666;margin-right: .1rem;padding-right: .1rem;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+
+
+/*脚部*/
+.foo-bottom{width: 100%; height: .6rem; border-top: 1px solid #cccccc; position: fixed; bottom: 0; background: #ffffff;z-index: 1000;}
+.foo-bottom .grid{height: 100%; width: 100%;display: flex}
+.foo-bottom a{display: flex; align-items: center; justify-content: center;}
+.foo-bottom .classifer{ display: flex; align-items: center; justify-content: center;}
+.st-function div.grid .grid-cell{ display: flex; flex-direction: column; justify-content: space-between; align-items: center; overflow: hidden;}
+.grid-cell{ overflow: hidden;height: 100%;  width: 30%;}
+.foo-bottom .demo{ width:50%; height: 65%;  text-align: center;}
+.home,.classify,.shipcar,.mine{width: .4rem; height: .4rem;}
+.home{background: url("../img/home-icon.png") center no-repeat; background-size: 60%;}
+.router-link-active .home{background: url("../img/home-icon-active.png") center no-repeat; background-size: 60%;}
+.router-link-active p{color:#93732b;}
+.classify{background: url("../img/classify-default.png") center no-repeat; background-size: 50%;}
+.router-link-active .classify{background: url("../img/classify-active.png") center no-repeat; background-size: 50%;}
+.shipcar{background: url("../img/foo-icon03.png") center no-repeat; background-size: 60%;}
+.router-link-active .shipcar{background: url("../img/ship-active.png") center no-repeat; background-size: 60%;}
+.mine{background: url("../img/foo-icon04.png") center no-repeat; background-size: 60%;}
+.router-link-active .mine{background: url("../img/foo-icon04-active.png") center no-repeat; background-size: 60%;}
+#body{
+    background: #f1f2f6;
+}
+.common1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.common2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.error{color: red; margin-top: .1rem; font-size: .16rem;}
+/*加载更多*/
+.pullUp{
+    margin-bottom: .6rem;
+}
+.mores { width: 100%; height: .65rem; display: flex; align-items: center; justify-content: center; }
+.mores img { width: 100%; height: 100%; }
+.mores p { width: 0.25rem; height: .25rem; display: flex; align-items: center; justify-content: center; font-size: 0.16rem; color: #666; }
+.mores p.loading { animation: Rotate 1s linear infinite }
+@-webkit-keyframes Rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

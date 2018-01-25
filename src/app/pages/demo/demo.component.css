@@ -1,0 +1,4 @@
+:host{  /*给内部元素添加样式 没有标签*/
+    border: 1px solid yellow;
+    background: red;
+}
